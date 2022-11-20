@@ -9,13 +9,29 @@
 /* Begin PBXBuildFile section */
 		7A7C236A2929E76400E65343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C23692929E76400E65343 /* AppDelegate.swift */; };
 		7A7C236C2929E76400E65343 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C236B2929E76400E65343 /* SceneDelegate.swift */; };
-		7A7C236E2929E76400E65343 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C236D2929E76400E65343 /* ViewController.swift */; };
-		7A7C23712929E76400E65343 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7C236F2929E76400E65343 /* Main.storyboard */; };
 		7A7C23732929E76500E65343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A7C23722929E76500E65343 /* Assets.xcassets */; };
 		7A7C23762929E76500E65343 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A7C23742929E76500E65343 /* LaunchScreen.storyboard */; };
 		7A7C23812929E76500E65343 /* SurfTaroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C23802929E76500E65343 /* SurfTaroTests.swift */; };
 		7A7C238B2929E76500E65343 /* SurfTaroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C238A2929E76500E65343 /* SurfTaroUITests.swift */; };
 		7A7C238D2929E76500E65343 /* SurfTaroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C238C2929E76500E65343 /* SurfTaroUITestsLaunchTests.swift */; };
+		7A7C239B2929E89000E65343 /* AppInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C239A2929E89000E65343 /* AppInitializer.swift */; };
+		7A7C239E2929E8E400E65343 /* GlobalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C239D2929E8E400E65343 /* GlobalRouter.swift */; };
+		7A7C23A12929E99A00E65343 /* STTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C23A02929E99A00E65343 /* STTabBarController.swift */; };
+		7A7C23A42929E9CF00E65343 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C23A32929E9CF00E65343 /* Colors.swift */; };
+		7A7C23A72929EA2000E65343 /* STTabBarType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C23A62929EA2000E65343 /* STTabBarType.swift */; };
+		7A7C23AA2929EABF00E65343 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C23A92929EABF00E65343 /* Images.swift */; };
+		7A7C23AD2929EB2200E65343 /* String+localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C23AC2929EB2200E65343 /* String+localization.swift */; };
+		7A7C23AF2929EB6C00E65343 /* UIWindow+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C23AE2929EB6C00E65343 /* UIWindow+extensions.swift */; };
+		7A7C23B12929EC2700E65343 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C23B02929EC2700E65343 /* String+Extensions.swift */; };
+		7A7C23B52929ECA800E65343 /* STNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C23B42929ECA800E65343 /* STNavigationController.swift */; };
+		7A7C23BC2929F5BA00E65343 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C23B72929F5BA00E65343 /* MainPresenter.swift */; };
+		7A7C23BD2929F5BA00E65343 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C23B82929F5BA00E65343 /* MainRouter.swift */; };
+		7A7C23BE2929F5BA00E65343 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C23B92929F5BA00E65343 /* MainViewController.swift */; };
+		7A7C23BF2929F5BA00E65343 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C23BA2929F5BA00E65343 /* MainInteractor.swift */; };
+		7A7C23C02929F5BA00E65343 /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C23BB2929F5BA00E65343 /* MainConfigurator.swift */; };
+		7A7C23C32929F79A00E65343 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7A7C23C22929F79A00E65343 /* SnapKit */; };
+		7A7C23C62929F85900E65343 /* RxKeyboard in Frameworks */ = {isa = PBXBuildFile; productRef = 7A7C23C52929F85900E65343 /* RxKeyboard */; };
+		7A7C23C82929FB8F00E65343 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A7C23C72929FB8F00E65343 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +55,6 @@
 		7A7C23662929E76400E65343 /* SurfTaro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfTaro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7C23692929E76400E65343 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A7C236B2929E76400E65343 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7A7C236D2929E76400E65343 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7A7C23702929E76400E65343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7A7C23722929E76500E65343 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A7C23752929E76500E65343 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A7C23772929E76500E65343 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +63,22 @@
 		7A7C23862929E76500E65343 /* SurfTaroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurfTaroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7C238A2929E76500E65343 /* SurfTaroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfTaroUITests.swift; sourceTree = "<group>"; };
 		7A7C238C2929E76500E65343 /* SurfTaroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurfTaroUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7A7C239A2929E89000E65343 /* AppInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInitializer.swift; sourceTree = "<group>"; };
+		7A7C239D2929E8E400E65343 /* GlobalRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalRouter.swift; sourceTree = "<group>"; };
+		7A7C23A02929E99A00E65343 /* STTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTabBarController.swift; sourceTree = "<group>"; };
+		7A7C23A32929E9CF00E65343 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		7A7C23A62929EA2000E65343 /* STTabBarType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTabBarType.swift; sourceTree = "<group>"; };
+		7A7C23A92929EABF00E65343 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		7A7C23AC2929EB2200E65343 /* String+localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+localization.swift"; sourceTree = "<group>"; };
+		7A7C23AE2929EB6C00E65343 /* UIWindow+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+extensions.swift"; sourceTree = "<group>"; };
+		7A7C23B02929EC2700E65343 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		7A7C23B42929ECA800E65343 /* STNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STNavigationController.swift; sourceTree = "<group>"; };
+		7A7C23B72929F5BA00E65343 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		7A7C23B82929F5BA00E65343 /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		7A7C23B92929F5BA00E65343 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7A7C23BA2929F5BA00E65343 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		7A7C23BB2929F5BA00E65343 /* MainConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
+		7A7C23C72929FB8F00E65343 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A7C23C32929F79A00E65343 /* SnapKit in Frameworks */,
+				7A7C23C62929F85900E65343 /* RxKeyboard in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +131,9 @@
 		7A7C23682929E76400E65343 /* SurfTaro */ = {
 			isa = PBXGroup;
 			children = (
-				7A7C23692929E76400E65343 /* AppDelegate.swift */,
-				7A7C236B2929E76400E65343 /* SceneDelegate.swift */,
-				7A7C236D2929E76400E65343 /* ViewController.swift */,
-				7A7C236F2929E76400E65343 /* Main.storyboard */,
-				7A7C23722929E76500E65343 /* Assets.xcassets */,
-				7A7C23742929E76500E65343 /* LaunchScreen.storyboard */,
-				7A7C23772929E76500E65343 /* Info.plist */,
+				7A7C23A82929EAAC00E65343 /* Supporting+files */,
+				7A7C239C2929E8D500E65343 /* AppLayer */,
+				7A7C23992929E87600E65343 /* ServiceLayer */,
 			);
 			path = SurfTaro;
 			sourceTree = "<group>";
@@ -127,6 +155,96 @@
 			path = SurfTaroUITests;
 			sourceTree = "<group>";
 		};
+		7A7C23992929E87600E65343 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				7A7C239A2929E89000E65343 /* AppInitializer.swift */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		7A7C239C2929E8D500E65343 /* AppLayer */ = {
+			isa = PBXGroup;
+			children = (
+				7A7C23AB2929EB0900E65343 /* Extensions */,
+				7A7C23A22929E9C300E65343 /* Helpers */,
+				7A7C239F2929E97B00E65343 /* Modules */,
+				7A7C239D2929E8E400E65343 /* GlobalRouter.swift */,
+			);
+			path = AppLayer;
+			sourceTree = "<group>";
+		};
+		7A7C239F2929E97B00E65343 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7A7C23B32929EC9100E65343 /* STNavigationController */,
+				7A7C23B22929EC4600E65343 /* MainScreen */,
+				7A7C23A52929EA0600E65343 /* STTabBarController */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7A7C23A22929E9C300E65343 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7A7C23A32929E9CF00E65343 /* Colors.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7A7C23A52929EA0600E65343 /* STTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				7A7C23A02929E99A00E65343 /* STTabBarController.swift */,
+				7A7C23A62929EA2000E65343 /* STTabBarType.swift */,
+			);
+			path = STTabBarController;
+			sourceTree = "<group>";
+		};
+		7A7C23A82929EAAC00E65343 /* Supporting+files */ = {
+			isa = PBXGroup;
+			children = (
+				7A7C23772929E76500E65343 /* Info.plist */,
+				7A7C23722929E76500E65343 /* Assets.xcassets */,
+				7A7C23742929E76500E65343 /* LaunchScreen.storyboard */,
+				7A7C23692929E76400E65343 /* AppDelegate.swift */,
+				7A7C236B2929E76400E65343 /* SceneDelegate.swift */,
+				7A7C23A92929EABF00E65343 /* Images.swift */,
+				7A7C23C72929FB8F00E65343 /* Localizable.strings */,
+			);
+			path = "Supporting+files";
+			sourceTree = "<group>";
+		};
+		7A7C23AB2929EB0900E65343 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7A7C23AC2929EB2200E65343 /* String+localization.swift */,
+				7A7C23AE2929EB6C00E65343 /* UIWindow+extensions.swift */,
+				7A7C23B02929EC2700E65343 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7A7C23B22929EC4600E65343 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7A7C23B72929F5BA00E65343 /* MainPresenter.swift */,
+				7A7C23B82929F5BA00E65343 /* MainRouter.swift */,
+				7A7C23B92929F5BA00E65343 /* MainViewController.swift */,
+				7A7C23BA2929F5BA00E65343 /* MainInteractor.swift */,
+				7A7C23BB2929F5BA00E65343 /* MainConfigurator.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		7A7C23B32929EC9100E65343 /* STNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				7A7C23B42929ECA800E65343 /* STNavigationController.swift */,
+			);
+			path = STNavigationController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +261,10 @@
 			dependencies = (
 			);
 			name = SurfTaro;
+			packageProductDependencies = (
+				7A7C23C22929F79A00E65343 /* SnapKit */,
+				7A7C23C52929F85900E65343 /* RxKeyboard */,
+			);
 			productName = SurfTaro;
 			productReference = 7A7C23662929E76400E65343 /* SurfTaro.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +337,10 @@
 				Base,
 			);
 			mainGroup = 7A7C235D2929E76400E65343;
+			packageReferences = (
+				7A7C23C12929F79A00E65343 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				7A7C23C42929F85900E65343 /* XCRemoteSwiftPackageReference "RxKeyboard" */,
+			);
 			productRefGroup = 7A7C23672929E76400E65343 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,8 +358,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A7C23762929E76500E65343 /* LaunchScreen.storyboard in Resources */,
+				7A7C23C82929FB8F00E65343 /* Localizable.strings in Resources */,
 				7A7C23732929E76500E65343 /* Assets.xcassets in Resources */,
-				7A7C23712929E76400E65343 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +384,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A7C236E2929E76400E65343 /* ViewController.swift in Sources */,
+				7A7C23B52929ECA800E65343 /* STNavigationController.swift in Sources */,
+				7A7C239B2929E89000E65343 /* AppInitializer.swift in Sources */,
+				7A7C239E2929E8E400E65343 /* GlobalRouter.swift in Sources */,
+				7A7C23A72929EA2000E65343 /* STTabBarType.swift in Sources */,
+				7A7C23A12929E99A00E65343 /* STTabBarController.swift in Sources */,
+				7A7C23BD2929F5BA00E65343 /* MainRouter.swift in Sources */,
+				7A7C23BC2929F5BA00E65343 /* MainPresenter.swift in Sources */,
+				7A7C23BE2929F5BA00E65343 /* MainViewController.swift in Sources */,
+				7A7C23B12929EC2700E65343 /* String+Extensions.swift in Sources */,
+				7A7C23A42929E9CF00E65343 /* Colors.swift in Sources */,
+				7A7C23C02929F5BA00E65343 /* MainConfigurator.swift in Sources */,
+				7A7C23AF2929EB6C00E65343 /* UIWindow+extensions.swift in Sources */,
 				7A7C236A2929E76400E65343 /* AppDelegate.swift in Sources */,
 				7A7C236C2929E76400E65343 /* SceneDelegate.swift in Sources */,
+				7A7C23AA2929EABF00E65343 /* Images.swift in Sources */,
+				7A7C23BF2929F5BA00E65343 /* MainInteractor.swift in Sources */,
+				7A7C23AD2929EB2200E65343 /* String+localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +437,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7A7C236F2929E76400E65343 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7A7C23702929E76400E65343 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7A7C23742929E76500E65343 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,12 +570,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SurfTaro/Info.plist;
+				INFOPLIST_FILE = "SurfTaro/Supporting+files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,9 +582,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.artema.SurfTaro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,12 +599,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SurfTaro/Info.plist;
+				INFOPLIST_FILE = "SurfTaro/Supporting+files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,9 +611,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.artema.SurfTaro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -596,6 +732,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7A7C23C12929F79A00E65343 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		7A7C23C42929F85900E65343 /* XCRemoteSwiftPackageReference "RxKeyboard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxKeyboard.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7A7C23C22929F79A00E65343 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A7C23C12929F79A00E65343 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		7A7C23C52929F85900E65343 /* RxKeyboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A7C23C42929F85900E65343 /* XCRemoteSwiftPackageReference "RxKeyboard" */;
+			productName = RxKeyboard;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7A7C235E2929E76400E65343 /* Project object */;
 }

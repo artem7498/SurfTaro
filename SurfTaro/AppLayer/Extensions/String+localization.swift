@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+extension String {
+
+    static func localized(_ key: String, defaultValue: String = "") -> String {
+        return Bundle.main.localizedString(forKey: key, value: nil, table: nil)
+    }
+}

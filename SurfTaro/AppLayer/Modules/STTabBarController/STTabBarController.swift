@@ -30,11 +30,11 @@ class STTabBarController: UITabBarController, UITabBarControllerDelegate {
     }
     
     private func commonInit() {
-        self.tabBar.tintColor = Colors.brandGoldColor.ui
-        let items = TDCTabBarType.allCases
+        self.tabBar.tintColor = Colors.brandOrange.ui
+        let items = STTabBarType.allCases
         let controllers = items.map { (type) -> UIViewController in
             let controller: UINavigationController
-            controller = TDCNavigationController(rootViewController: type.configure())
+            controller = STNavigationController(rootViewController: type.configure())
             controller.navigationBar.backgroundColor = Colors.tableBg.ui
             controller.navigationBar.isTranslucent = false
             controller.tabBarItem = .init(title: type.title,

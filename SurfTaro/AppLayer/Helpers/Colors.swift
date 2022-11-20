@@ -5,4 +5,14 @@
 //  Created by Artem A. FEIP on 20.11.2022.
 //
 
-import Foundation
+import UIKit
+
+enum Colors: String {
+    
+    case brandOrange
+    case tableBg
+    
+    var ui: UIColor {
+        return UIColor(named: rawValue.firstUppercased) ?? .cyan
+    }
+}

@@ -37,6 +37,11 @@ class MainViewController: UIViewController {
         commonInit()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,13 +49,16 @@ class MainViewController: UIViewController {
         presenter.viewDidLoad()
     }
     
-    // MARK: - private func
-    private func commonInit() {
-
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
+    
+    // MARK: - private func
+    private func commonInit() { }
 
     private func configureUI() {
-
+        view.backgroundColor = .orange
     }
 }
 

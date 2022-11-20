@@ -1,7 +1,17 @@
-/* 
-  Localizable.strings
-  SurfTaro
+//
+// Localizable.strings
+// SurfTaro
+//
+// Created by Artem A. FEIP on 20.11.2022.
+//
 
-  Created by Artem A. FEIP on 20.11.2022.
-  
-*/
+// MARK: Common
+
+"continue" = "Продолжить";
+"language" = "Язык";
+
+// MARK: STTabBar
+
+"tabBar.main" = "Card of the day";
+"tabBar.cardsDeck" = "Card deck";
+"tabBar.tarotSpread" = "Tarot spread";
