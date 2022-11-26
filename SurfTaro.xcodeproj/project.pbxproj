@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A62C9F7293221800046D4C5 /* DifferenceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7A62C9F6293221800046D4C5 /* DifferenceKit */; };
 		7A7C236A2929E76400E65343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C23692929E76400E65343 /* AppDelegate.swift */; };
 		7A7C236C2929E76400E65343 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C236B2929E76400E65343 /* SceneDelegate.swift */; };
 		7A7C23732929E76500E65343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A7C23722929E76500E65343 /* Assets.xcassets */; };
@@ -86,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A62C9F7293221800046D4C5 /* DifferenceKit in Frameworks */,
 				7A7C23C32929F79A00E65343 /* SnapKit in Frameworks */,
 				7A7C23C62929F85900E65343 /* RxKeyboard in Frameworks */,
 			);
@@ -264,6 +266,7 @@
 			packageProductDependencies = (
 				7A7C23C22929F79A00E65343 /* SnapKit */,
 				7A7C23C52929F85900E65343 /* RxKeyboard */,
+				7A62C9F6293221800046D4C5 /* DifferenceKit */,
 			);
 			productName = SurfTaro;
 			productReference = 7A7C23662929E76400E65343 /* SurfTaro.app */;
@@ -340,6 +343,7 @@
 			packageReferences = (
 				7A7C23C12929F79A00E65343 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				7A7C23C42929F85900E65343 /* XCRemoteSwiftPackageReference "RxKeyboard" */,
+				7A62C9F5293221800046D4C5 /* XCRemoteSwiftPackageReference "DifferenceKit" */,
 			);
 			productRefGroup = 7A7C23672929E76400E65343 /* Products */;
 			projectDirPath = "";
@@ -734,6 +738,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7A62C9F5293221800046D4C5 /* XCRemoteSwiftPackageReference "DifferenceKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ra1028/DifferenceKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		7A7C23C12929F79A00E65343 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -753,6 +765,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7A62C9F6293221800046D4C5 /* DifferenceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7A62C9F5293221800046D4C5 /* XCRemoteSwiftPackageReference "DifferenceKit" */;
+			productName = DifferenceKit;
+		};
 		7A7C23C22929F79A00E65343 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7A7C23C12929F79A00E65343 /* XCRemoteSwiftPackageReference "SnapKit" */;
