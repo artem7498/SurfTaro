@@ -15,7 +15,6 @@ protocol MainViewToPresenterProtocol: AnyObject {
 
 // MARK: Protocol - MainInteractorToPresenterProtocol (Interactor -> Presenter)
 protocol MainInteractorToPresenterProtocol: AnyObject {
-
 }
 
 class MainPresenter {
@@ -24,13 +23,28 @@ class MainPresenter {
     var router: MainPresenterToRouterProtocol!
     var interactor: MainPresenterToInteractorProtocol!
     weak var view: MainPresenterToViewProtocol!
+    
+    private func buildModels() {
+        var sections: [MainSectionModel] = []
+        
+        var cardSection = MainSectionModel.init(section: .cardOfTheDay, items: [])
+        
+        let cardImage: MainItemType = .card
+        cardSection.items.append(cardImage)
+        
+        let cardDescription: MainItemType = .cardDescription(viewModel: .init(title: "", description: ""))
+        cardSection.items.append(cardDescription)
+        
+        sections.append(cardSection)
+        view.updateTableView(with: sections)
+    }
 }
 
 // MARK: Extension - MainViewToPresenterProtocol
 extension MainPresenter: MainViewToPresenterProtocol {
     
     func viewDidLoad() {
-    
+        buildModels()
     }
 }
 

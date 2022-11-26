@@ -9,6 +9,7 @@ import UIKit
 
 enum Colors: String {
     
+    case tabBar
     case brandOrange
     case tableBg
     

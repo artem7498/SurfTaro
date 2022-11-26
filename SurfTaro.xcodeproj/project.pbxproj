@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7A62C9F7293221800046D4C5 /* DifferenceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7A62C9F6293221800046D4C5 /* DifferenceKit */; };
+		7A62C9FA293226DD0046D4C5 /* MainItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A62C9F9293226DD0046D4C5 /* MainItemType.swift */; };
+		7A62C9FC293226E60046D4C5 /* MainSectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A62C9FB293226E60046D4C5 /* MainSectionType.swift */; };
+		7A62CA0029322EC40046D4C5 /* MainCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A62C9FF29322EC40046D4C5 /* MainCardCell.swift */; };
+		7A62CA02293230CE0046D4C5 /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A62CA01293230CE0046D4C5 /* UITableView+Extensions.swift */; };
+		7A62CA04293230F50046D4C5 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A62CA03293230F50046D4C5 /* NSObject+Extensions.swift */; };
+		7A62CA0729323C050046D4C5 /* MainDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A62CA0629323C050046D4C5 /* MainDescriptionCell.swift */; };
+		7A62CA0929323F0E0046D4C5 /* MainDescriptionCellUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A62CA0829323F0E0046D4C5 /* MainDescriptionCellUIModel.swift */; };
 		7A7C236A2929E76400E65343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C23692929E76400E65343 /* AppDelegate.swift */; };
 		7A7C236C2929E76400E65343 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C236B2929E76400E65343 /* SceneDelegate.swift */; };
 		7A7C23732929E76500E65343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A7C23722929E76500E65343 /* Assets.xcassets */; };
@@ -53,6 +60,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A62C9F9293226DD0046D4C5 /* MainItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainItemType.swift; sourceTree = "<group>"; };
+		7A62C9FB293226E60046D4C5 /* MainSectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSectionType.swift; sourceTree = "<group>"; };
+		7A62C9FF29322EC40046D4C5 /* MainCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardCell.swift; sourceTree = "<group>"; };
+		7A62CA01293230CE0046D4C5 /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		7A62CA03293230F50046D4C5 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		7A62CA0629323C050046D4C5 /* MainDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDescriptionCell.swift; sourceTree = "<group>"; };
+		7A62CA0829323F0E0046D4C5 /* MainDescriptionCellUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDescriptionCellUIModel.swift; sourceTree = "<group>"; };
 		7A7C23662929E76400E65343 /* SurfTaro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfTaro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7C23692929E76400E65343 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A7C236B2929E76400E65343 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +124,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A62C9F8293226B70046D4C5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7A62CA0529323B9B0046D4C5 /* DescriptionCell */,
+				7A62C9FE29322DBE0046D4C5 /* CardCell */,
+				7A62C9F9293226DD0046D4C5 /* MainItemType.swift */,
+				7A62C9FB293226E60046D4C5 /* MainSectionType.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7A62C9FE29322DBE0046D4C5 /* CardCell */ = {
+			isa = PBXGroup;
+			children = (
+				7A62C9FF29322EC40046D4C5 /* MainCardCell.swift */,
+			);
+			path = CardCell;
+			sourceTree = "<group>";
+		};
+		7A62CA0529323B9B0046D4C5 /* DescriptionCell */ = {
+			isa = PBXGroup;
+			children = (
+				7A62CA0629323C050046D4C5 /* MainDescriptionCell.swift */,
+				7A62CA0829323F0E0046D4C5 /* MainDescriptionCellUIModel.swift */,
+			);
+			path = DescriptionCell;
+			sourceTree = "<group>";
+		};
 		7A7C235D2929E76400E65343 = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +265,8 @@
 				7A7C23AC2929EB2200E65343 /* String+localization.swift */,
 				7A7C23AE2929EB6C00E65343 /* UIWindow+extensions.swift */,
 				7A7C23B02929EC2700E65343 /* String+Extensions.swift */,
+				7A62CA01293230CE0046D4C5 /* UITableView+Extensions.swift */,
+				7A62CA03293230F50046D4C5 /* NSObject+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -230,6 +274,7 @@
 		7A7C23B22929EC4600E65343 /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
+				7A62C9F8293226B70046D4C5 /* Cells */,
 				7A7C23B72929F5BA00E65343 /* MainPresenter.swift */,
 				7A7C23B82929F5BA00E65343 /* MainRouter.swift */,
 				7A7C23B92929F5BA00E65343 /* MainViewController.swift */,
@@ -393,18 +438,25 @@
 				7A7C239E2929E8E400E65343 /* GlobalRouter.swift in Sources */,
 				7A7C23A72929EA2000E65343 /* STTabBarType.swift in Sources */,
 				7A7C23A12929E99A00E65343 /* STTabBarController.swift in Sources */,
+				7A62CA04293230F50046D4C5 /* NSObject+Extensions.swift in Sources */,
 				7A7C23BD2929F5BA00E65343 /* MainRouter.swift in Sources */,
 				7A7C23BC2929F5BA00E65343 /* MainPresenter.swift in Sources */,
 				7A7C23BE2929F5BA00E65343 /* MainViewController.swift in Sources */,
+				7A62CA0029322EC40046D4C5 /* MainCardCell.swift in Sources */,
+				7A62C9FC293226E60046D4C5 /* MainSectionType.swift in Sources */,
 				7A7C23B12929EC2700E65343 /* String+Extensions.swift in Sources */,
 				7A7C23A42929E9CF00E65343 /* Colors.swift in Sources */,
 				7A7C23C02929F5BA00E65343 /* MainConfigurator.swift in Sources */,
+				7A62CA0929323F0E0046D4C5 /* MainDescriptionCellUIModel.swift in Sources */,
+				7A62C9FA293226DD0046D4C5 /* MainItemType.swift in Sources */,
 				7A7C23AF2929EB6C00E65343 /* UIWindow+extensions.swift in Sources */,
+				7A62CA02293230CE0046D4C5 /* UITableView+Extensions.swift in Sources */,
 				7A7C236A2929E76400E65343 /* AppDelegate.swift in Sources */,
 				7A7C236C2929E76400E65343 /* SceneDelegate.swift in Sources */,
 				7A7C23AA2929EABF00E65343 /* Images.swift in Sources */,
 				7A7C23BF2929F5BA00E65343 /* MainInteractor.swift in Sources */,
 				7A7C23AD2929EB2200E65343 /* String+localization.swift in Sources */,
+				7A62CA0729323C050046D4C5 /* MainDescriptionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +625,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SurfTaro/Supporting+files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -602,6 +655,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SurfTaro/Supporting+files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
