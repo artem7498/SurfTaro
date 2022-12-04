@@ -35,7 +35,7 @@ class STTabBarController: UITabBarController, UITabBarControllerDelegate {
         let controllers = items.map { (type) -> UIViewController in
             let controller: UINavigationController
             controller = STNavigationController(rootViewController: type.configure())
-            controller.navigationBar.backgroundColor = Colors.tableBg.ui
+            controller.navigationBar.backgroundColor = Colors.tabBar.ui
             controller.navigationBar.isTranslucent = false
             controller.tabBarItem = .init(title: type.title,
                                           image: type.image,

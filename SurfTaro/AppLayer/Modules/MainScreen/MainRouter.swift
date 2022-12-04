@@ -10,7 +10,6 @@ import Foundation
 
 // MARK: Protocol - MainPresenterToRouterProtocol (Presenter -> Router)
 protocol MainPresenterToRouterProtocol: AnyObject {
-
 }
 
 class MainRouter {
@@ -21,5 +20,4 @@ class MainRouter {
 
 // MARK: Extension - MainPresenterToRouterProtocol
 extension MainRouter: MainPresenterToRouterProtocol {
-    
 }

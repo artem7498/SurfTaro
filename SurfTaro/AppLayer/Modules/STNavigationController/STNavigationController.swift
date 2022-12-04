@@ -38,7 +38,7 @@ class STNavigationController: UINavigationController {
         
         let standardAppearance = UITabBarAppearance()
         standardAppearance.configureWithOpaqueBackground()
-        standardAppearance.backgroundColor = Colors.tableBg.ui
+        standardAppearance.backgroundColor = Colors.tabBar.ui
         standardAppearance.shadowImage = nil
         standardAppearance.shadowColor = nil
         UITabBar.appearance().standardAppearance = standardAppearance
