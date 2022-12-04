@@ -44,7 +44,7 @@ class MainDescriptionCell: UITableViewCell {
         return label
     }()
     
-    // MARK: - Init
+    // MARK: - Lifecycle
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -74,8 +74,10 @@ class MainDescriptionCell: UITableViewCell {
         }
     }
     
+    // MARK: - Impl
+    
     func configure(viewModel: MainDescriptionCellUIModel) {
-        titleLabel.text = "Star"
-        descriptionLabel.text = "Energy card: Skill, diplomacy, address, subtlety; sickness, pain, loss, disaster, snares of enemies; self-confidence, will; the Querent, if male. His existential longing acts as a motive for creativity, but the horizon of expectation is traditional. Erotic is relative. Artistic visibility completes a minor reconstructive approach. The leveling of individuality completes the unchanging symbolic metaphorism. The parody imitates the neurotic method of cluster analysis. The basic personality type is changeable."
+        titleLabel.text = viewModel.title
+        descriptionLabel.text = viewModel.description
     }
 }

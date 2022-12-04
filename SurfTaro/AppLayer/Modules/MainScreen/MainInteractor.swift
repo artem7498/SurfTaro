@@ -10,17 +10,14 @@ import Foundation
 
 // MARK: Protocol - MainPresenterToInteractorProtocol (Presenter -> Interactor)
 protocol MainPresenterToInteractorProtocol: AnyObject {
-
 }
 
 class MainInteractor {
 
     // MARK: Properties
     weak var presenter: MainInteractorToPresenterProtocol!
-
 }
 
 // MARK: Extension - MainPresenterToInteractorProtocol
 extension MainInteractor: MainPresenterToInteractorProtocol {
-    
 }

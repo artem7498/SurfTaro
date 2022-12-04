@@ -17,6 +17,7 @@ protocol MainPresenterToViewProtocol: AnyObject {
 
 // MARK: Protocol - MainRouterToViewProtocol (Router -> View)
 protocol MainRouterToViewProtocol: AnyObject {
+    
     func presentView(view: UIViewController)
     func pushView(view: UIViewController)
 }
@@ -120,7 +121,6 @@ class MainViewController: UIViewController {
 extension MainViewController: MainPresenterToViewProtocol {
     
     func updateTableView(with data: [MainSectionModel]) {
-//        logger.debugMessage("\(#fileID) -> \(#function)")
         var snapshot = NSDiffableDataSourceSnapshot<MainSectionType, MainItemType>()
         for model in data {
             if !model.items.isEmpty {
@@ -133,7 +133,8 @@ extension MainViewController: MainPresenterToViewProtocol {
 }
 
 // MARK: Extension - MainRouterToViewProtocol
-extension MainViewController: MainRouterToViewProtocol{
+extension MainViewController: MainRouterToViewProtocol {
+    
     func presentView(view: UIViewController) {
         present(view, animated: true, completion: nil)
     }
@@ -144,5 +145,4 @@ extension MainViewController: MainRouterToViewProtocol{
 }
 
 extension MainViewController: UITableViewDelegate {
-    
 }

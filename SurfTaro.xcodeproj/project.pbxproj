@@ -15,6 +15,7 @@
 		7A62CA04293230F50046D4C5 /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A62CA03293230F50046D4C5 /* NSObject+Extensions.swift */; };
 		7A62CA0729323C050046D4C5 /* MainDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A62CA0629323C050046D4C5 /* MainDescriptionCell.swift */; };
 		7A62CA0929323F0E0046D4C5 /* MainDescriptionCellUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A62CA0829323F0E0046D4C5 /* MainDescriptionCellUIModel.swift */; };
+		7A62CA0B29324BE60046D4C5 /* MainCardCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A62CA0A29324BE60046D4C5 /* MainCardCellDelegate.swift */; };
 		7A7C236A2929E76400E65343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C23692929E76400E65343 /* AppDelegate.swift */; };
 		7A7C236C2929E76400E65343 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C236B2929E76400E65343 /* SceneDelegate.swift */; };
 		7A7C23732929E76500E65343 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A7C23722929E76500E65343 /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		7A62CA03293230F50046D4C5 /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
 		7A62CA0629323C050046D4C5 /* MainDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDescriptionCell.swift; sourceTree = "<group>"; };
 		7A62CA0829323F0E0046D4C5 /* MainDescriptionCellUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDescriptionCellUIModel.swift; sourceTree = "<group>"; };
+		7A62CA0A29324BE60046D4C5 /* MainCardCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardCellDelegate.swift; sourceTree = "<group>"; };
 		7A7C23662929E76400E65343 /* SurfTaro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfTaro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7C23692929E76400E65343 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A7C236B2929E76400E65343 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				7A62C9FF29322EC40046D4C5 /* MainCardCell.swift */,
+				7A62CA0A29324BE60046D4C5 /* MainCardCellDelegate.swift */,
 			);
 			path = CardCell;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				7A7C239E2929E8E400E65343 /* GlobalRouter.swift in Sources */,
 				7A7C23A72929EA2000E65343 /* STTabBarType.swift in Sources */,
 				7A7C23A12929E99A00E65343 /* STTabBarController.swift in Sources */,
+				7A62CA0B29324BE60046D4C5 /* MainCardCellDelegate.swift in Sources */,
 				7A62CA04293230F50046D4C5 /* NSObject+Extensions.swift in Sources */,
 				7A7C23BD2929F5BA00E65343 /* MainRouter.swift in Sources */,
 				7A7C23BC2929F5BA00E65343 /* MainPresenter.swift in Sources */,
@@ -625,7 +629,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7MQ354KRU3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SurfTaro/Supporting+files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -637,7 +641,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.artema.SurfTaro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artema.tarosurf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -655,7 +659,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 7MQ354KRU3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "SurfTaro/Supporting+files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -667,7 +671,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.artema.SurfTaro;
+				PRODUCT_BUNDLE_IDENTIFIER = com.artema.tarosurf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
