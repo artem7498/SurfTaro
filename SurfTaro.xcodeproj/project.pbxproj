@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1CD8AB7E293E145D0040A2B9 /* test1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8AB7D293E145D0040A2B9 /* test1.swift */; };
+		1CD8AB80293E14C50040A2B9 /* test 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8AB7F293E14C50040A2B9 /* test 2.swift */; };
 		7A62C9F7293221800046D4C5 /* DifferenceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7A62C9F6293221800046D4C5 /* DifferenceKit */; };
 		7A7C236A2929E76400E65343 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C23692929E76400E65343 /* AppDelegate.swift */; };
 		7A7C236C2929E76400E65343 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7C236B2929E76400E65343 /* SceneDelegate.swift */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		1CD8AB7D293E145D0040A2B9 /* test1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test1.swift; sourceTree = "<group>"; };
+		1CD8AB7F293E14C50040A2B9 /* test 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "test 2.swift"; sourceTree = "<group>"; };
 		7A7C23662929E76400E65343 /* SurfTaro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfTaro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A7C23692929E76400E65343 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A7C236B2929E76400E65343 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 		7A7C235D2929E76400E65343 = {
 			isa = PBXGroup;
 			children = (
+				1CD8AB7F293E14C50040A2B9 /* test 2.swift */,
 				1CD8AB7D293E145D0040A2B9 /* test1.swift */,
 				7A7C23682929E76400E65343 /* SurfTaro */,
 				7A7C237F2929E76500E65343 /* SurfTaroTests */,
@@ -406,6 +409,7 @@
 				7A7C236A2929E76400E65343 /* AppDelegate.swift in Sources */,
 				1CD8AB7E293E145D0040A2B9 /* test1.swift in Sources */,
 				7A7C236C2929E76400E65343 /* SceneDelegate.swift in Sources */,
+				1CD8AB80293E14C50040A2B9 /* test 2.swift in Sources */,
 				7A7C23AA2929EABF00E65343 /* Images.swift in Sources */,
 				7A7C23BF2929F5BA00E65343 /* MainInteractor.swift in Sources */,
 				7A7C23AD2929EB2200E65343 /* String+localization.swift in Sources */,
