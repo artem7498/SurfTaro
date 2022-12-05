@@ -7,3 +7,4 @@
 
 import Foundation
 var b = "hui 2"
+var c = "hui 3"
