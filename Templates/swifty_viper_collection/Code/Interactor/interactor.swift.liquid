@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol {{ module_info.name }}ViewInput: AnyObject, ActivityDisplayable, FPDiffUpdatable {
+final class {{ module_info.name }}Interactor: {{ module_info.name }}InteractorInput {
 
-    func setupInitialState(title: String?)
+    weak var output: {{ module_info.name }}InteractorOutput!
 }

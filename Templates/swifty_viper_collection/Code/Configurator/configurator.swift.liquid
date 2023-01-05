@@ -11,7 +11,11 @@ import UIKit
 final class {{ module_info.name }}Configurator {
 
     func configure() -> UIViewController {
-        let viewController = {{ module_info.name }}ViewController()
+        guard let viewController = UIStoryboard(
+            name: String(describing: {{ module_info.name }}ViewController.self),
+            bundle: Bundle.main).instantiateInitialViewController() as? {{ module_info.name }}ViewController else {
+            fatalError("Can't load {{ module_info.name }}ViewController from storyboard")
+        }
         
         let router = {{ module_info.name }}Router(transitionHandler: viewController)
         

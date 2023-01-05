@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol {{ module_info.name }}ViewInput: AnyObject, ActivityDisplayable, FPDiffUpdatable {
+protocol {{ module_info.name }}ViewOutput: AnyObject, CellDelegate {
 
-    func setupInitialState(title: String?)
+    func viewIsReady()
 }

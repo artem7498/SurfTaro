@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol {{ module_info.name }}ViewInput: AnyObject, ActivityDisplayable, FPDiffUpdatable {
+protocol {{ module_info.name }}ViewInput: AnyObject, ActivityDisplayable, FPCollectionUpdatable {
 
-    func setupInitialState(title: String?)
+    func setupInitialState()
 }

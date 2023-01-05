@@ -1,0 +1,83 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+import DifferenceKit
+
+final class {{ module_info.name }}ViewController: UIViewController {
+
+    var output: {{ module_info.name }}ViewOutput!
+
+    // MARK: Outlets
+
+    @IBOutlet fileprivate weak var collectionView: UICollectionView! {
+        didSet {
+            collectionView.dataSource = self
+            collectionView.collectionViewLayout = applyLayout()
+        }
+    }
+
+    // MARK: Private properties
+    
+    private let factory = CommonTableViewFactory()
+    fileprivate var sectionModel: [FPDifferentiableAdapter] = []
+
+    // MARK: Life cycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        output.viewIsReady()
+    }
+
+    private func applyLayout() -> UICollectionViewCompositionalLayout {
+        return UICollectionViewCompositionalLayout { sectionNumber, _ in
+            return self.sectionModel[sectionNumber].model.layout.section
+        }
+    }
+        
+    private func registerCells() {
+        collectionView.register(cell: _.self)
+    }
+}
+
+// MARK: {{module_info.name}}ViewInput
+
+extension {{ module_info.name }}ViewController: {{module_info.name}}ViewInput {
+
+    func setupInitialState() {
+        registerCells()
+    }
+
+    func updateCollection(using container: FPCollectionContainer) {
+        let diff = container.createDiff(source: sectionModel)
+        collectionView.reload(using: diff) { models in
+            self.sectionModel = models
+        }
+    }
+}
+
+// MARK: UICollectionViewDataSource
+
+extension {{ module_info.name }}ViewController: UICollectionViewDataSource {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return sectionModel.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return sectionModel[section].elements.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let model = sectionModel[indexPath.section].elements[indexPath.row]
+        let factory = self.factory.diffFactory(for: model, delegate: output)
+        let cell = collectionView.dequeueReusableCell(withFactory: factory, for: indexPath)
+        cell.backgroundColor = .blue
+        return cell
+    }
+}

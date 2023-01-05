@@ -27,10 +27,10 @@ final class {{ module_info.name }}Presenter {
     }
 
     func buildModels() {
-        let container = FPDiffContainer()
+        let container = FPCollectionContainer()
         // container.add(....model...)
         
-        view?.updateTable(using: container)
+        view?.updateCollection(using: container)
     }
 }
 
@@ -39,7 +39,7 @@ final class {{ module_info.name }}Presenter {
 extension {{ module_info.name }}Presenter: {{ module_info.name }}ViewOutput {
 
     func viewIsReady() {
-        view?.setupInitialState(title: nil)
+        view?.setupInitialState()
         buildModels()
     }
 }
