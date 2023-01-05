@@ -20,9 +20,6 @@ final class {{ module_info.name }}ViewController: UIViewController {
 
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero)
-        tableView.dataSource = self
-        tableView.tableFooterView = UIView()
-        tableView.separatorStyle = .none
 
         return tableView
     }()
@@ -38,16 +35,7 @@ final class {{ module_info.name }}ViewController: UIViewController {
     // MARK: - UI Configuration
         
     private func configureUI() {
-        view.addSubview(tableView)
-        tableView.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
-            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
-            make.left.right.equalToSuperview()
         }
-
-        // 1) регистрируем ячейку tableView.register(cell: _.self)
-        // 2) объявем связь в CellFactoryLinkMapper
-        // 3) добавляем в презентер делегат ячейки
     }
 }
 
@@ -60,22 +48,5 @@ extension {{ module_info.name }}ViewController: {{module_info.name}}ViewInput {
     }
 
     func updateTable(using container: FPDiffContainer) {
-        let diff = container.createDiff(source: models)
-        tableView.reload(using: diff, with: .none) { (models) in
-            self.models = models
-        }
-    }
-}
-
-// MARK: UITableViewDataSource
-
-extension {{ module_info.name }}ViewController: UITableViewDataSource {
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return models.count
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return RegisterFactory.diffCell(models, output, tableView, indexPath)
     }
 }
