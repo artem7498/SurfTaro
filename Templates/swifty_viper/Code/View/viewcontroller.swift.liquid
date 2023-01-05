@@ -1,0 +1,73 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+import DifferenceKit
+
+final class {{ module_info.name }}ViewController: UIViewController {
+
+    var output: {{ module_info.name }}ViewOutput!
+
+    // MARK: Outlets
+
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            tableView.dataSource = self
+            tableView.tableFooterView = UIView()
+            tableView.separatorStyle = .none
+        }
+    }
+
+    // MARK: Private properties
+    
+    private let factory = CommonTableViewFactory()
+    fileprivate var models: [AnyDifferentiable] = []
+
+    // MARK: Life cycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        output.viewIsReady()
+    }
+        
+    private func registerCells() {
+        tableView.register(cell: _.self)
+    }
+}
+
+// MARK: {{module_info.name}}ViewInput
+
+extension {{ module_info.name }}ViewController: {{module_info.name}}ViewInput {
+
+    func setupInitialState() {
+        registerCells()
+    }
+
+    func updateTable(using container: FPDiffContainer) {
+        let diff = container.createDiff(source: models)
+        tableView.reload(using: diff, with: .automatic) { (models) in
+            self.models = models
+        }
+    }
+}
+
+// MARK: UITableViewDataSource
+
+extension {{ module_info.name }}ViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return models.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let model = models[indexPath.row]
+        
+        let cellFactory = factory.diffFactory(for: model, delegate: output)
+        return tableView.dequeueReusableCell(withFactory: cellFactory, for: indexPath)
+    }
+}
