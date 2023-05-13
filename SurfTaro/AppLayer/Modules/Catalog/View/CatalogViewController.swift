@@ -16,19 +16,39 @@ final class CatalogViewController: UIViewController {
 
     // MARK: Private properties
     
-    fileprivate var models: [AnyDifferentiable] = []
+    private lazy var contentView: UIView = {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = Colors.tableBg.ui
+        return view
+    }()
 
     // MARK: Life cycle
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         configureUI()
         output.viewIsReady()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 
     // MARK: - UI Configuration
         
     private func configureUI() {
+        view.addSubview(contentView)
+        contentView.snp.makeConstraints { make in
+            make.top.left.right.equalToSuperview()
+            make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
+        }
     }
 }
 

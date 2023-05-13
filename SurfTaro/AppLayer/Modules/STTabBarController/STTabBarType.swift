@@ -54,7 +54,8 @@ enum STTabBarType: Int, CaseIterable {
             let viewController = MainConfigurator().configure()
             return viewController
         case .cardsDeck:
-            return UIViewController()
+            let viewController = CatalogConfigurator().configure()
+            return viewController
         case .tarotSpread:
             return UIViewController()
         }
